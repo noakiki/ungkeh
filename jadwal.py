@@ -39,6 +39,3 @@ class Jadwal:
                     print(f"{time} - {t}")
 
         print("")
-
-objek = Jadwal()
-objek.show_tasks()

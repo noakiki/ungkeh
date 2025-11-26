@@ -1,19 +1,21 @@
-import time
+hour = 0
+minute = 0
+second = 0
 
-class waktu:
-    def __init__(self):
-        self.hour = 0
-        self.minute = 0
-        self.second = 0
-
-    def show():
-        print(f"{hour} : {minute} : {second}")
-        time.sleep(1)
+def show():
+    print(f"{hour} : {minute} : {second}")
 
 
-    def time():
-        second = second + 1
-        if second == 60:
-            minute = minute + 1
-            if minute == 60:
-                hour = hour + 1
+def time():
+    global hour
+    global minute
+    global second
+
+    
+    second = second + 1
+    if second == 60:
+        second = 0
+        minute = minute + 1
+        if minute == 60:
+            minute = 0
+            hour = hour + 1
